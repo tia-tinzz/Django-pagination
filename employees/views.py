@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -36,3 +37,8 @@ def index(request):
 #     context_object_name = 'employees'
 #     paginate_by = 6
 #     template_name = 'index.html'
+
+""" Custom Middleware"""
+def home(request):
+    print("I am view for custom middleware")
+    return HttpResponse("Custom middleware works")
