@@ -48,7 +48,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'employees.middlewares.my_middleware',
+    'employees.middlewares.my_middleware',#functionbased
+    #employees.middlewares.MyMiddleware',(classbased)
 ]
 
 ROOT_URLCONF = 'paginationproject.urls'
